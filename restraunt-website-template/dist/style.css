@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    background-color:whitesmoke;
+   margin:0;
+  padding:0;
+}
+  
+
+a.menu{
+    border: none;
+    color: gray;
+    text-decoration: none;
+}
+.side_panel{
+    text-align: left;
+}
+.side_panel .menu_icon{
+    display: none;
+}
+.side_panel img{
+    width: 1rem;
+    height: 1rem;
+}
+a:focus.menu{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+}
+.header a {
+  float: left;
+  color: balck;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color:black;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: centre;
+  }
+}
+li{
+    text-align: left;
+    font-size: 1rem;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    list-style-type:none;
+}
+button.cart{
+    background-color: rgb(218, 56, 56);
+    color: white;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 20em;
+}
+@media(max-width:50rem)
+{ 
+  button.cart{
+    position:absolute;
+    top: 8rem;
+    right: 3%;
+    background:;
+    display:block;
+    transition: all 0.5s ease;
+    padding:
+    
+  }
+}
+
+
+.column {
+    float: left;
+    padding: 3rem;
+}
+  
+.left {
+    width: 25%;
+}
+  
+.right {
+    width: 75%;
+}
+.about_content{
+  display: inline-flex;
+  grid-template-columns: auto auto;
+  
+  
+}
+@media(max-width:50rem)
+{ 
+  .about_content{
+    position:absolute;
+    top: 40rem;
+    display:grid;
+    
+    
+  }
+}
+
+.items{
+    z-index: 2;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem;
+    margin:1rem;
+    width: 60%;
+    border: none;
+    border-radius: 15%;
+    box-shadow: 5px 10px 8px rgb(155, 150, 150);
+    display: grid;
+    font-size: 1rem;
+   text-align: centre;
+    
+}
+h4{
+    background-color: white;
+    display: inherit;
+}
+img{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: scale-down;
+}
+.qsn{
+    width: 50%;
+    font-weight: 800;
+    display: inline-flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow     Bold', sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+}
+@media(max-width:50rem)
+{ 
+  .qsn{
+    position:absolute;
+    top: 10rem;
+    margin:5rem;
+    
+  }
+}
+
+
+.subtitle{
+    display: inline;
+    float:left;
+    width: 30%;
+    margin-right: 2rem;
+    color: gray;
+    font-size: 1rem;
+    
+    
+  
+}
+@media(max-width:50rem)
+{ 
+  .subtitle{
+    position:absolute;
+    top: 75rem;
+    margin:rem;
+    display:block;
+  }
+}
+p  {
+    border-style: solid;
+    border-bottom: thick line;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 8rem;
+    border-color:red;
+}
+
+
+/*Trying to make the navigation bar resposnive without using bootstrap but couldnt finish in time but if given some more time i will be bale to finish it, else than the navigation bar evrything else is responsive.*/  
+@media screen and (max-width: 600px) {
+    .side_panel.responsive .menu{
+        display: none;
+    }
+    .side_panel a.menu_icon {
+        display: inline-flex;
+        float: left;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .side_panel.responsive {position: relative;}
+    .side_panel.responsive .menu_icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .side_panel.responsive button {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+  }
